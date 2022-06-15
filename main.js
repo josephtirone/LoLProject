@@ -39,22 +39,12 @@ document.body.onload = () => {
           let img = new Pixelate(image, {amount: 0});
 
         let amount = 1;
-        
-        let isRunning = true;
-
-     
-
-
 
         const improveQuality = async () => {
-        
-
-
-          console.log(amount);
           setTimeout(() => {
           image.style.opacity = 1;
-          imageContainer.style.width = "298px"
-          }, 100)
+          imageContainer.style.width = '298px';
+          }, 200)
           setTimeout(() => {
             if (amount > 0) {
             
@@ -68,7 +58,10 @@ document.body.onload = () => {
         
         }
         
-           startButton.addEventListener("click", improveQuality);
+           startButton.addEventListener("click", () => {
+            startButton.remove();
+            improveQuality();
+           });
 
           const rendleTry = async ()=>{const resposta = prompt("Escreva sua resposta", "");
 
