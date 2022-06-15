@@ -74,7 +74,7 @@ document.body.onload = () => {
 
           console.log(resposta);
 
-           if(resposta.toLowerCase() == myChampion.id.toLowerCase())
+           if(resposta.toLowerCase() == myChampion.name.toLowerCase())
            {
              await (()=>{
               fundo.style.backgroundColor = "green";
