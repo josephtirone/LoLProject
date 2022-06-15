@@ -59,7 +59,7 @@ document.body.onload = () => {
         }
         
            startButton.addEventListener("click", () => {
-            startButton.remove();
+            startButton.disabled = true;
             improveQuality();
            });
 
