@@ -32,10 +32,9 @@ document.body.onload = () => {
         
         async function pickOneChampion (championsList){
           const myChampion = championsList[Math.round(Math.random() * championsList.length)];
-          //await fetch(`http://localhost:3002/${myChampion.id}_0.jpg`)
           console.log(myChampion);
           
-          image.src = `/Images/${myChampion.id}_0.jpg`
+          image.src = `/public/${myChampion.id}_0.jpg`
           
           let img = new Pixelate(image, {amount: 0});
 
