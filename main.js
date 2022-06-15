@@ -34,7 +34,7 @@ document.body.onload = () => {
           const myChampion = championsList[Math.round(Math.random() * championsList.length)];
           console.log(myChampion);
           
-          image.src = `/public/${myChampion.id}_0.jpg`
+          image.src = `/${myChampion.id}_0.jpg`
           
           let img = new Pixelate(image, {amount: 0});
 
