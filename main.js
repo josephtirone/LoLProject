@@ -72,6 +72,8 @@ document.body.onload = () => {
              await (()=>{
               fundo.style.backgroundColor = "green";
              })()
+             amount = 0;
+             img.setAmount(0).render();
              alert("voce ganhou")
              setTimeout(()=>{window.location.reload();}, 2000)
              
