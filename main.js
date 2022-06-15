@@ -1,3 +1,4 @@
+import "./style.css";
 import Pixelate from "pixelate";
 const input = document.getElementById("input");
 const startButton = document.getElementById("start-button");
